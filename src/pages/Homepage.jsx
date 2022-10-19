@@ -12,8 +12,11 @@ const Homepage = () => {
   }, []);
   return (
     <main>
-      <div className={css.Slider}></div>
-      <PopularMovies movies={movies} />
+      <div className="Conteiner">
+        <div className={css.Slider}></div>
+        <h1 className={css.PageTitle}>Popular Movies</h1>
+        <PopularMovies movies={movies} />
+      </div>
     </main>
   );
 };

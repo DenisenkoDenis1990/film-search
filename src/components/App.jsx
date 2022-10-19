@@ -6,12 +6,14 @@ import { Cast } from './Cast/Cast';
 import { Reviews } from './Reviews/Reviews';
 export const App = () => {
   return (
-    <div>
-      <nav>
-        <NavLink to="/" end>
+    <div className="Conteiner">
+      <nav className="Navigation">
+        <NavLink to="/" end className="NavigationLink">
           Home
         </NavLink>
-        <NavLink to="/movies">Movies</NavLink>
+        <NavLink to="/movies" className="NavigationLink">
+          Movies
+        </NavLink>
       </nav>
 
       <Routes>

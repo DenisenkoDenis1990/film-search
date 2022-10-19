@@ -1,15 +1,61 @@
 @import-normalize; /* bring in normalize.css styles */
-@import 'react-slideshow-image/dist/styles.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1a1a1d;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.NavigationLink {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+}
+.NavigationLink.active {
+  color: red;
+}
+.NavigationLink:not(:last-child) {
+  margin-right: 106px;
+}
+.Navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50px;
+  width: 640px;
+}
+.Conteiner {
+  width: 1411px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

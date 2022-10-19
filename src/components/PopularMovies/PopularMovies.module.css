@@ -1,0 +1,21 @@
+.PopularMoviesList {
+  margin: 0 88px 40px 86px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.PopularMovie {
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.PopularMovie:nth-child(4n + 0) {
+  margin-right: 0;
+}
+.PopularMovie:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
