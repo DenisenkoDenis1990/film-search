@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useSearchParams, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { getMoviesByName } from 'utils/apiService';
+import css from 'pages/MoviesPage.module.css';
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -31,27 +32,35 @@ const MoviesPage = () => {
 
   return (
     <main>
-      <form onSubmit={submitHandler}>
-        <input type="text" placeholder="Search movies..." name="query"></input>
-        <button type="submit">
-          <FaSearch />
-        </button>
-      </form>
-      <ul>
-        {movies.map(movie => {
-          return (
-            <li key={movie.id}>
-              <Link to={`/movies/${movie.id}`} state={{ from: location }}>
-                <img
-                  src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`}
-                  alt={movie.title}
-                ></img>
-                <p>{movie.title}</p>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      <div className="Conteiner">
+        <form onSubmit={submitHandler} className={css.SearchForm}>
+          <input
+            type="text"
+            placeholder="Search movies..."
+            name="query"
+            autoComplete="off"
+            className={css.SearchInput}
+          ></input>
+          <button type="submit" className={css.SearchButton}>
+            <FaSearch className={css.SearchButtonIcon} />
+          </button>
+        </form>
+        <ul className={css.MoviesList}>
+          {movies.map(movie => {
+            return (
+              <li key={movie.id} className={css.MoviesListItem}>
+                <Link to={`/movies/${movie.id}`} state={{ from: location }}>
+                  <img
+                    src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`}
+                    alt={movie.title}
+                  ></img>
+                  <p className={css.MovieTitle}>{movie.title}</p>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </main>
   );
 };

@@ -71,10 +71,14 @@ const MovieDetailsPage = () => {
       <div className={css.MovieDetailsContainer}>
         <ul className={css.OptionsList}>
           <li className={css.Option}>
-            <Link to="cast">Cast</Link>
+            <Link to="cast" className={css.OptionLink}>
+              Cast
+            </Link>
           </li>
           <li className={css.Option}>
-            <Link to="reviews">Reviews</Link>
+            <Link to="reviews" className={css.OptionLink}>
+              Reviews
+            </Link>
           </li>
         </ul>
         <Outlet></Outlet>

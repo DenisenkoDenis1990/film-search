@@ -1,0 +1,47 @@
+/* .ReviewsWrapper {
+  background: rgba(88, 88, 88, 0.4);
+  border-radius: 15px;
+  margin-top: 75px;
+} */
+.Title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-left: 13px;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+.AuthorName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: left;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0;
+}
+.ReviewText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: #585858;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.ReviewDate {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: right;
+  color: #ffffff;
+}
