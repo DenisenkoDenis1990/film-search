@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { IoMdContact } from 'react-icons/io';
 import { getCast } from 'utils/apiService';
 import css from '../Cast/Cast.module.css';
 
